@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thanksgiving!</title>
+    <link href="index.css" rel="stylesheet" type="text/css" media="all">
+    <!--link for w3.css-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+</head>
+
+
+<body class="grid">
+
+    <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+        </script>
+
+
+<header>
+    <h1>All about Thanksgiving!!</h1>
+    <p class="w3-animate-top">This is a page about Thanksgiving. It will cover the history, customs and first Thanksgiving.</p>
+</header>
+
+<div class="itemOne">
+<h3>The discovery of a new land and people</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod metus nec tincidunt volutpat. Sed vulputate eros ex, 
+    et sollicitudin erat sodales id. Aenean pulvinar ullamcorper magna. Ut porta nunc viverra, imperdiet leo quis, cursus dolor. 
+    Praesent lectus quam, bibendum sit amet justo in, congue eleifend leo. Cras lacinia justo eu viverra lobortis. Integer nec 
+    mattis arcu. Donec porta convallis turpis in ullamcorper.</p>
+</div>
+
+<div class="itemTwo">
+<h3>Thanksgiving Foods</h3>
+<input class="w3-input w3-border w3-padding" type="text" placeholder="Search for food.." id="myInput" onkeyup="myFunction()">
+
+  <table class="w3-table-all w3-margin-top" id="myTable">
+    <tr>
+      <th style="width:60%;">Food</th>
+      <th style="width:40%;">Dish Type</th>
+    </tr>
+    <tr>
+      <td>Turkey</td>
+      <td>Main Dish</td>
+    </tr>
+    <tr>
+      <td>Mashed Potatoes</td>
+      <td>Main Dish</td>
+    </tr>
+    <tr>
+      <td>Dinner Roll</td>
+      <td>Main Dish</td>
+    </tr>
+    <tr>
+      <td>Pumpkin Pie</td>
+      <td>Dessert</td>
+    </tr>
+    <tr>
+      <td>Apple Pie</td>
+      <td>Dessert</td>
+    </tr>
+    <tr>
+      <td>Chips and Dip</td>
+      <td>Appetizer</td>
+    </tr>
+    <tr>
+      <td>Cheese and Crackers</td>
+      <td>Appetizer</td>
+    </tr>
+    <tr>
+      <td>Fruit Plate</td>
+      <td>Appetizer</td>
+    </tr>
+  </table>
+</div>
+
+<div class="itemThree">
+    <figure><img src="first-thanksgiving.jpg" alt="the first thanksgiving"><figcaption>The First Thanksgiving</figcaption></figure>
+</div>
+    
+<div class="itemFour">
+<h3>The first Thanksgiving</h3>
+<p>Nunc eu dignissim magna, vel auctor elit. Nulla auctor justo a elit aliquet, at luctus eros pulvinar. Duis sed urna iaculis, 
+    luctus arcu quis, gravida magna. Suspendisse et dictum velit. Quisque egestas ac neque a venenatis. Sed in accumsan justo. 
+    Pellentesque eget erat molestie sapien venenatis rutrum quis sit amet ante. Maecenas ac enim ultrices, feugiat neque eu, 
+    pellentesque sem.</p>
+</div>
+
+<div class="itemFive">
+<h3>Classic Thanksgiving Customs</h3>
+<p class="w3-mobile">Nam fermentum massa posuere tincidunt sagittis. Phasellus sollicitudin magna sed sapien varius dictum. Sed viverra hendrerit 
+    ex sit amet luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer a 
+    arcu sem. Nullam iaculis eleifend scelerisque. Nullam et dictum neque. Sed ut pharetra lorem. Etiam congue, arcu eget aliquam 
+    rhoncus, tellus lectus pharetra nisi, ut ultrices mauris arcu vitae nibh. Proin convallis dictum venenatis. Fusce vel ex 
+    hendrerit nulla fringilla elementum quis ut felis. Suspendisse potenti. Maecenas consequat nisl eu urna imperdiet, non luctus 
+    tortor blandit.</p>
+</div>
+        
+<div class="itemSix">
+    <figure><img src="first-parade.jpg" alt="the first thanksgiving parade"><br>
+    <figcaption class="w3-tag w3-white">The First Thanksgiving Parade</figcaption></figure>
+</div>
+
+<div class="itemSeven">
+    <a href="https://en.wikipedia.org/wiki/Thanksgiving" class="w3-button w3-white">Find out more information on Thanksgiving!</a>
+</div>
+            
+<div class="itemEight">
+<h3>The birth of a holiday that defines America</h3>
+<p class="w3-panel w3-pale-blue">In eget lorem quis neque fermentum pharetra interdum in leo. Nullam hendrerit orci in lacinia vestibulum. Phasellus et ipsum 
+    quis mi euismod pharetra. Curabitur nec nibh in metus posuere pellentesque. Suspendisse ligula tortor, vehicula sit amet 
+    metus vel, porttitor ultricies nibh. Maecenas iaculis arcu facilisis imperdiet pellentesque. Proin fermentum ipsum sit amet 
+    lacus commodo varius. Nulla dui elit, semper sed lectus eu, accumsan aliquet magna.</p>
+</div>
+
+<div class="itemNine">
+<h3>Modern Thanksgiving Traditions</h3>
+<p>Donec sed lectus suscipit, sodales turpis nec, gravida augue. Cras quis odio accumsan, varius enim non, viverra risus. 
+    Maecenas eget tristique erat. Duis eu varius magna, volutpat blandit risus. Quisque ac orci lectus. Sed malesuada ullamcorper 
+    purus eget pharetra. Etiam nec efficitur neque, nec imperdiet mauris. Ut sed nibh nulla. Pellentesque nunc neque, lobortis 
+    sit amet auctor id, viverra at quam. Mauris egestas ultricies dolor, aliquet tincidunt est cursus vitae. Vestibulum efficitur 
+    fermentum justo, vel interdum turpis luctus sit amet. Suspendisse a tortor varius, aliquet lorem nec, vulputate elit. Morbi 
+    vitae magna accumsan, dictum risus et, aliquam leo.</p>
+</div>
+
+<div class="itemTen"><figure>
+<img src="modern-customs.jpg" alt="a table with modern thanksgiving food dishes" class="w3-border w3-padding">
+<figcaption>Common foods eaten at Thanksgiving</figcaption></figure>
+</div>
+
+<footer>
+	<p><div>
+		Webmaster: Meghan Carlson<br>
+		Date: 11-30-20
+	</div>
+</footer>
+
+</body>
+</html>
